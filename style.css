@@ -1,0 +1,584 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* RESET  */
+
+body {
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+/* MAIN */
+
+.navbar {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  background-color: transparent;
+  border-bottom: transparent 1px solid;
+  transition: background-color 0.5s ease-in-out, border 0.5s ease-in-out;
+}
+
+.navbar-anim-color {
+  transition: background-color 0.5s ease-in-out, border 0.3s ease-in-out;
+  background-color: black;
+  border-bottom: white 2px solid;
+}
+
+.navbar ul {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar li {
+  padding: 1.5rem 1rem;
+  text-transform: uppercase;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 512px) {
+  .navbar li {
+    padding: 1rem 1rem;
+  }
+  .navbar a {
+    font-size: 13px;
+  }
+}
+
+/* CONTAINER */
+
+.accueil-container {
+  height: 800px;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.accueil-left-side {
+  position: relative;
+  background-color: black;
+  height: 100%;
+  width: 40%;
+  box-shadow: 90px 0px 100px 100px black;
+}
+
+.accueil-right-side {
+  background-image: url("./ressources/gym-accueil.jpg");
+  background-position: 70% 10%;
+  width: 60%;
+}
+
+.accueil-title {
+  padding-top: 200px;
+  font-size: 70px;
+  color: white;
+  padding-bottom: 50px;
+  margin-left: 8vw;
+  width: 400px;
+}
+
+.accueil-accroche {
+  color: white;
+  padding: 3px;
+  margin-left: 8vw;
+  font-size: 30px;
+  white-space: nowrap;
+}
+
+.accueil-button-container {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  margin-left: 8vw;
+}
+
+.accueil-button {
+  background: transparent;
+  color: white;
+  font-size: 20px;
+  padding: 20px 35px;
+  border: white 2px solid;
+  border-radius: 15px;
+  border: 1px solid;
+  margin-right: 10px;
+  text-transform: capitalize;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.accueil-button:hover {
+  transition: all 0.4s ease-in-out;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 512px) {
+  .accueil-left-side {
+    box-shadow: 90px 0px 100px 60px black;
+  }
+
+  .accueil-title {
+    font-size: 50px;
+    margin-left: 10vw;
+  }
+
+  .accueil-accroche {
+    font-size: 20px;
+    margin-left: 10vw;
+  }
+
+  .accueil-button {
+    padding: 10px 20px;
+    font-size: 10px;
+    margin-right: 0px;
+  }
+
+  .accueil-button-container {
+    width: 125%;
+    justify-content: space-around;
+    margin-left: 10vw;
+  }
+}
+
+/* SECTIONS CARTES  */
+
+.titre-section-cartes {
+  font-size: 60px;
+  padding-top: 60px;
+  padding-bottom: 200px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.section-cartes {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  position: relative;
+  border: black 2px solid;
+}
+
+.carte {
+  margin: 0 20px 80px;
+  height: auto;
+  width: 350px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.carte img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.carte p {
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.points {
+  position: absolute;
+  width: 50px;
+  top: -110px;
+  left: -130px;
+  z-index: -1;
+}
+
+@media screen and (max-width: 1400px) {
+  .points {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .titre-section-cartes {
+    font-size: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+/* SECTION CHOICES PRICES */
+
+.price-choice-section {
+  height: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price-choice {
+  /* width: 30%; */
+  margin: 50px 100px;
+  text-align: center;
+}
+
+.price-choice h2 {
+  color: white;
+  font-size: 50px;
+  margin: 20px auto 40px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.price-choice p {
+  color: white;
+  font-size: 20px;
+  width: 70%;
+  margin: 0 auto 30px;
+}
+
+.price-choice button {
+  color: white;
+  background: transparent;
+  font-size: 20px;
+  border: white 1px solid;
+  padding: 20px 70px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.price-choice button:hover {
+  transition: all 0.2s ease-in-out;
+  background: white;
+  color: black;
+}
+
+@media screen and (max-width: 1000px) {
+  .price-choice {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .price-choice p {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .price-choice-section {
+    flex-direction: column;
+  }
+  .price-choice h2 {
+    font-size: 40px;
+  }
+
+  .price-choice p {
+    width: 70%;
+    font-size: 18px;
+  }
+
+  .price-choice button {
+    font-size: 18px;
+    padding: 15px 60px;
+  }
+
+  .price-choice {
+    margin: 25px 60px;
+  }
+}
+
+.titre-section-equipements {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 60px;
+  margin: 60px 0;
+}
+
+.equipement-container {
+  margin: 0 auto;
+  padding-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  position: relative;
+}
+
+.item-equipement {
+  width: 330px;
+  height: 400px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.equipement-container :nth-child(1) {
+  background-image: url(./ressources/img1-equip.jpg);
+  object-fit: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.equipement-container :nth-child(2) {
+  background-image: url(./ressources/img2-equip.jpg);
+  object-fit: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.equipement-container :nth-child(3) {
+  background-image: url(./ressources/img3-equip.jpg);
+  object-fit: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.equipement-container :nth-child(4) {
+  background-image: url(./ressources/img4-equip.jpg);
+  object-fit: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.equipement-container :nth-child(5) {
+  background-image: url(./ressources/img5-equip.jpg);
+  object-fit: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.equipement-container :nth-child(6) {
+  background-image: url(./ressources/img6-equip.jpg);
+  object-fit: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.equipement-container :nth-child(7) {
+  background-image: url(./ressources/img7-equip.jpg);
+  object-fit: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.equipement-container :nth-child(8) {
+  background-image: url(./ressources/img8-equip.jpg);
+  object-fit: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.equipement-container :nth-child(9) {
+  background-image: url(./ressources/img9-equip.jpg);
+  object-fit: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.equipements-modale-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  display: none;
+}
+
+.activeModale {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.equipements-modale-container img {
+  width: 60%;
+  height: 50%;
+  position: relative;
+}
+
+.equipements-modale-container button {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  right: 230px;
+  top: 240px;
+  border-radius: 20px;
+  background-color: red;
+  border: black 2px solid;
+  color: white;
+  z-index: 100;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .titre-section-equipements {
+    font-size: 40px;
+    margin: 40px 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .titre-section-equipements {
+    font-size: 35px;
+    margin: 40px 0;
+  }
+}
+
+.parallax {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 400px;
+  margin-bottom: 100px;
+  background-image: url(./ressources/img-paral.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.parallax p {
+  color: white;
+  text-transform: uppercase;
+  padding: 20px 0;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 60px;
+}
+
+@media screen and (max-width: 700px) {
+  .parallax p {
+    font-size: 40px;
+  }
+}
+
+/* SECTION TARIFS  */
+
+.section-tarifs-titre {
+  font-size: 60px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.section-tarifs-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.carte-tarif {
+  margin: 10px;
+  width: 380px;
+  height: 600px;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.carte-tarif h3 {
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+  font-size: 50px;
+}
+
+.carte-tarif p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding-bottom: 45px;
+  font-size: 24px;
+}
+
+#carte-prix {
+  font-size: 80px;
+}
+
+#carte-prix::after {
+  content: "€";
+  font-size: 40px;
+  transform: translate(-50px, -12px);
+}
+
+#mois {
+  font-size: 24px;
+  transform: translateY(17px);
+}
+
+.carte-tarif img {
+  width: 20px;
+  margin: 0 10px;
+}

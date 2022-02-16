@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SPORT WEBSITE 🏋️‍♂️</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li class="nav-button"><a href="#"> Accueil</a></li>
+        <li class="nav-button"><a href="#"> Matériel</a></li>
+        <li class="nav-button"><a href="#"> Tarifs</a></li>
+        <li class="nav-button"><a href="#"> Contacts</a></li>
+      </ul>
+    </nav>
+
+    <div class="accueil-container">
+      <section class="accueil-left-side">
+        <h1 class="accueil-title">EPIC GYM NASTIC</h1>
+
+        <p class="accueil-accroche">Dépassez vos limites.</p>
+        <p class="accueil-accroche">Encore.</p>
+        <p class="accueil-accroche">Et encore.</p>
+
+        <div class="accueil-button-container">
+          <button class="accueil-button">équipements</button>
+          <button class="accueil-button">contact</button>
+        </div>
+      </section>
+
+      <section class="accueil-right-side"></section>
+    </div>
+
+    <h1 class="titre-section-cartes">NOTRE SALLE</h1>
+
+    <section class="section-cartes" id="cartes">
+      <div class="carte">
+        <img
+          src="./ressources/img-info-1.jpg"
+          alt="femme à la salle de sport"
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+          asperiores quia at exercitationem ipsa tempora.
+        </p>
+
+        <img
+          class="points"
+          src="./ressources/points.png"
+          alt="petits points décoration"
+        />
+      </div>
+
+      <div class="carte">
+        <img
+          src="./ressources/img-info-2.jpg"
+          alt=" homme sportif montrant ses abdominaux"
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+          asperiores quia at exercitationem ipsa tempora.
+        </p>
+      </div>
+
+      <div class="carte">
+        <img src="./ressources/img-info-3.jpg" alt=" cage à squats" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+          asperiores quia at exercitationem ipsa tempora.
+        </p>
+      </div>
+    </section>
+
+    <section class="price-choice-section" id="price-choice">
+      <div class="price-choice">
+        <h2>Musculation</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic,
+          incidunt eaque. Labore.
+        </p>
+        <button type="button" class="bouton-choix-tarifs">Les tarifs</button>
+      </div>
+
+      <div class="price-choice">
+        <h2>Cross-fit</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic,
+          incidunt eaque. Labore.
+        </p>
+        <button type="button" class="bouton-choix-tarifs">Les tarifs</button>
+      </div>
+    </section>
+
+    <h2 class="titre-section-equipements">Nos equipements</h2>
+    <section id="equipements" class="equipement-container">
+      <button
+        class="item-equipement"
+        type="button"
+        data-equipement="1"
+      ></button>
+      <button
+        class="item-equipement"
+        type="button"
+        data-equipement="2"
+      ></button>
+      <button
+        class="item-equipement"
+        type="button"
+        data-equipement="3"
+      ></button>
+      <button
+        class="item-equipement"
+        type="button"
+        data-equipement="4"
+      ></button>
+      <button
+        class="item-equipement"
+        type="button"
+        data-equipement="5"
+      ></button>
+      <button
+        class="item-equipement"
+        type="button"
+        data-equipement="6"
+      ></button>
+      <button
+        class="item-equipement"
+        type="button"
+        data-equipement="7"
+      ></button>
+      <button
+        class="item-equipement"
+        type="button"
+        data-equipement="8"
+      ></button>
+      <button
+        class="item-equipement"
+        type="button"
+        data-equipement="9"
+      ></button>
+    </section>
+
+    <div class="equipements-modale-container">
+      <img
+        class="equipements-modale-bloc"
+        id="equipements-modale-bloc"
+        src=""
+        alt="des machines de sport dans une salle"
+      />
+
+      <button type="button">X</button>
+    </div>
+
+    <section class="parallax">
+      <p>force</p>
+      <p>puissance</p>
+      <p>intensite</p>
+    </section>
+
+    <h2 class="section-tarifs-titre">tarifs</h2>
+
+    <section class="section-tarifs-container">
+      <div class="carte-tarif">
+        <h3 class="carte-tarifs-titre">Basique</h3>
+
+        <p id="carte-prix">
+          20
+          <span id="mois">/mois</span>
+        </p>
+
+        <p>
+          <img src="./ressources/check.svg" alt="" />
+          Salle libre
+        </p>
+
+        <p>
+          <img src="./ressources/check.svg" alt="" />
+          24/24h
+        </p>
+
+        <p>
+          <img src="./ressources/cross.svg" alt="" />
+          Coach
+        </p>
+
+        <p>
+          <img src="./ressources/cross.svg" alt="" />
+          Cross-Fit
+        </p>
+
+        <p>
+          <img src="./ressources/cross.svg" alt="" />
+          Balnéo
+        </p>
+      </div>
+
+      <div class="carte-tarif">
+        <h3 class="carte-tarifs-titre">Premium</h3>
+
+        <p id="carte-prix">
+          40
+          <span id="mois">/mois</span>
+        </p>
+
+        <p>
+          <img src="./ressources/check.svg" alt="" />
+          Salle libre
+        </p>
+
+        <p>
+          <img src="./ressources/check.svg" alt="" />
+          24/24h
+        </p>
+
+        <p>
+          <img src="./ressources/check.svg" alt="" />
+          Coach
+        </p>
+
+        <p>
+          <img src="./ressources/check.svg" alt="" />
+          Cross-Fit
+        </p>
+
+        <p>
+          <img src="./ressources/cross.svg" alt="" />
+          Balnéo
+        </p>
+      </div>
+
+      <div class="carte-tarif">
+        <h3 class="carte-tarifs-titre">VIP</h3>
+
+        <p id="carte-prix">
+          60
+          <span id="mois">/mois</span>
+        </p>
+
+        <p>
+          <img src="./ressources/check.svg" alt="" />
+          Salle libre
+        </p>
+
+        <p>
+          <img src="./ressources/check.svg" alt="" />
+          24/24h
+        </p>
+
+        <p>
+          <img src="./ressources/check.svg" alt="" />
+          Coach
+        </p>
+
+        <p>
+          <img src="./ressources/check.svg" alt="" />
+          Cross-Fit
+        </p>
+
+        <p>
+          <img src="./ressources/check.svg" alt="" />
+          Balnéo
+        </p>
+      </div>
+    </section>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
