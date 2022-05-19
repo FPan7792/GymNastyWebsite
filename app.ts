@@ -1,3 +1,5 @@
+// import $ from "jquery";
+
 const equipementImages = $(".item-equipement") as JQuery;
 const modale = $(".equipements-modale-container") as JQuery;
 const imageModale = $(".equipements-modale-bloc");
@@ -28,7 +30,13 @@ const navbar = $(".navbar") as JQuery;
 // });
 // console.log(window.scrollY);
 
-$(window).on("scroll", () => {
+// $(window).on("scroll", () => {
+//   if (window.scrollY > 0) {
+//     navbar.addClass("navbar-anim-color");
+//   } else navbar.removeClass("navbar-anim-color");
+// });
+
+window.addEventListener("scroll", () => {
   if (window.scrollY > 0) {
     navbar.addClass("navbar-anim-color");
   } else navbar.removeClass("navbar-anim-color");
