@@ -1,9 +1,27 @@
 {
-	"dependencies": {
-		"jquery": "^3.6.0",
-		"typescript": "^4.5.4"
-	},
-	"devDependencies": {
-		"@types/jquery": "^3.5.11"
-	}
+  "dependencies": {
+    "jquery": "^3.6.0"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.11",
+    "typescript": "^4.6.4"
+  },
+  "name": "1.sitegymdepart",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FPan7792/GymNastyWebsite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FPan7792/GymNastyWebsite/issues"
+  },
+  "homepage": "https://github.com/FPan7792/GymNastyWebsite#readme",
+  "description": ""
 }

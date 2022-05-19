@@ -3,14 +3,14 @@ lockfileVersion: 5.3
 specifiers:
   '@types/jquery': ^3.5.11
   jquery: ^3.6.0
-  typescript: ^4.5.4
+  typescript: ^4.6.4
 
 dependencies:
   jquery: 3.6.0
-  typescript: 4.5.4
 
 devDependencies:
   '@types/jquery': 3.5.11
+  typescript: 4.6.4
 
 packages:
 
@@ -28,8 +28,8 @@ packages:
     resolution: {integrity: sha512-JVzAR/AjBvVt2BmYhxRCSYysDsPcssdmTFnzyLEts9qNwmjmu4JTAMYubEfwVOSwpQ1I1sKKFcxhZCI2buerfw==}
     dev: false
 
-  /typescript/4.5.4:
-    resolution: {integrity: sha512-VgYs2A2QIRuGphtzFV7aQJduJ2gyfTljngLzjpfW9FoYZF6xuw1W0vW9ghCKLfcWrCFxK81CSGRAvS1pn4fIUg==}
+  /typescript/4.6.4:
+    resolution: {integrity: sha512-9ia/jWHIEbo49HfjrLGfKbZSuWo9iTMwXO+Ca3pRsSpbsMbc7/IU8NKdCZVRRBafVPGnoJeFL76ZOAA84I9fEg==}
     engines: {node: '>=4.2.0'}
     hasBin: true
-    dev: false
+    dev: true
